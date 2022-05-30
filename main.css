@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+body{
+}
+#back{
+    margin: 0px 5px 0px 0px;
+    padding: 00px 5px 0px 5px;
+    color: #FFC89A;
+    font-size: 18px;
+    font-weight: bold;
+}
+#back:hover{
+    transition: all 0.4s ease;
+    transform: translateX(10px);
+}
+
+#join-btn{
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin-top:-50px;
+    margin-left:-100px;
+    padding:20px 40px;
+    font-family: 'DM Sans', sans-serif;
+    color: #fff;
+    border: none;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+#join-btn:hover{
+    transition: all 0.4s ease;
+    transform: translateY(10px);
+    background-color: #FFC89A;
+    color: #111;
+    border: 2px solid black;
+}
+#stream-wrapper{
+    padding: 0;
+    margin: 0;
+}
+#video-streams{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    height: 90vh;
+    width: 1400px;
+    margin:0 auto;
+    padding: 0;
+    border: none;
+    border-radius: 15px;
+}
+
+.video-container{
+    max-height: 100%;
+    border: 2px solid #2d2d2d;
+    background-color: #203A49;
+}
+
+.video-player{
+    height: 100%;
+    width: 100%;
+}
+
+button{
+    border: 2px solid ;
+    background-color: #111;
+    color: #fff;
+    /* border-radius: 10px; */
+    padding: 6px 15px;
+    letter-spacing: 0.6px;
+    font-size: 16px;
+    margin:2px;
+    cursor: pointer;
+}
+
+#stream-controls{
+    display: none;  
+    justify-content: center;
+    margin-top:0.5em;
+}
+
+@media screen and (max-width:1400px){
+    #video-streams{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        width: 95%;
+    }
+}
